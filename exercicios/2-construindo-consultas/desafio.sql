@@ -1,0 +1,1 @@
+-- Na consulta anterior, crie uma coluna apenas com as 3 primeiras letras do nome
