@@ -1,4 +1,4 @@
--- Crie uma consulta para realizar um left join com as tabelas "tracks", "albums" e "artists"
+-- Crie uma consulta para realizar inner join com as tabelas "tracks", "albums" e "artists"
 SELECT
 tra.TrackId as id,
 tra.Name as musica,
