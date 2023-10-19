@@ -1,26 +1,13 @@
--- min - retorna o valor mínimo de uma coluna
-SELECT DISTINCT
-MIN(Total) AS menor_compra
-FROM
-invoices;
+-- Para a tabela "invoices", crie uma consulta que retorne o país e a soma das compras realizadas nele, bem como o valor da compra mínima e máxima, a quantidade de compras realizadas e o ticket médio de cada compra.
 
--- max - retorna o valor máximo armazenado em uma coluna
-SELECT DISTINCT
-MAX(Total) AS maior_compra
-FROM
-invoices;
-
-count - resulta na contagem de valores não nulos de uma coluna
-SELECT DISTINCT
-COUNT(InvoiceId) AS qnt_total_compras
-FROM
-invoices;
-
-sum - soma os valores de uma coluna. Pode ser usado com um where
 SELECT
-BillingCountry AS pais,
-SUM(Total) AS soma_compras
+BillingCountry as pais,
+SUM(Total) as soma_compras,
+COUNT(Total) as qnt_compras_realizadas,
+MIN(Total) as menor_compra,
+MAX(Total) as maior_compra,
+ROUND(AVG(Total), 2) as ticket_medio
 FROM
-invoices;
-
-avg - média aritmética dos valores de uma determinada coluna
+invoices
+WHERE
+BillingCountry = 'Austria';

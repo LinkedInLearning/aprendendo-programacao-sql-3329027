@@ -50,3 +50,26 @@ REPLACE(Address, 'Av.', 'Avenida') as endereco
 FROM customers
 WHERE 
 Country LIKE 'Brazil';
+
+-- Na consulta anterior, utilize o símbolo de coringa para construir padrões textuais
+SELECT DISTINCT
+CustomerId as id,
+SUBSTR(FirstName,1,3) as apelido,
+LOWER(FirstName) as nome,
+UPPER(LastName) as sobrenome,
+LOWER(FirstName || ' ' || LastName) as nome_completo,
+REPLACE(Address, 'Av.', 'Avenida') as endereco
+FROM customers
+WHERE 
+Country LIKE 'Bra%';
+
+SELECT DISTINCT
+CustomerId as id,
+SUBSTR(FirstName,1,3) as apelido,
+LOWER(FirstName) as nome,
+UPPER(LastName) as sobrenome,
+LOWER(FirstName || ' ' || LastName) as nome_completo,
+REPLACE(Address, 'Av.', 'Avenida') as endereco
+FROM customers
+WHERE 
+Country LIKE '%sil';
