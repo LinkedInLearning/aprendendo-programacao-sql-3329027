@@ -11,3 +11,6 @@
 
 
 -- Na consulta anterior, substitua "Av." por "Avenida" na coluna endereço
+
+
+-- Na consulta anterior, utilize o símbolo de coringa para construir padrões textuais
