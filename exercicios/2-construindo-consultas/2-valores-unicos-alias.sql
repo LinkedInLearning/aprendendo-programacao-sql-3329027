@@ -4,4 +4,4 @@
 -- Na consulta anterior, adicione a coluna Company para verificar as combinações únicas entre empresas e países
 
 
--- Nesta mesma consulta, atribua um alias em português para cada coluna
+-- Nesta mesma consulta, atribua um alias com título em português para cada coluna

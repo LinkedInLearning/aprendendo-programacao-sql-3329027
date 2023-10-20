@@ -11,7 +11,7 @@ Company
 FROM
 customers;
 
--- Nesta mesma consulta, atribua um alias em português para cada coluna
+-- Nesta mesma consulta, atribua um alias com título em português para cada coluna
 SELECT DISTINCT
 Country as pais,
 Company as empresa

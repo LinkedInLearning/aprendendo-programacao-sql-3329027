@@ -1,4 +1,4 @@
--- Crie uma consulta que retorne as colunas CustomerId, FirstName, LastName e Address das consumidoras brasileiras
+-- Crie uma consulta que retorne as colunas CustomerId, FirstName, LastName e Address das pessoas consumidoras brasileiras
 
 
 -- Na consulta anterior, converta o sobrenome para letras maiúsculas
