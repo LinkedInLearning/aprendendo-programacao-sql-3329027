@@ -18,8 +18,22 @@
   "screencastMode.onlyKeyboardShortcuts": true,
   "terminal.integrated.fontSize": 18,
   "window.zoomLevel": 3,
-  "workbench.activityBar.visible": true,
   "workbench.colorTheme": "Visual Studio Dark",
   "workbench.fontAliasing": "antialiased",
-  "workbench.statusBar.visible": true
+  "workbench.statusBar.visible": true,
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "driver": "SQLite",
+      "name": "chinookConnection",
+      "group": "chinookGroup",
+      "database": "chinook.db"
+    }
+  ],
+  "sqltools.useNodeRuntime": true,
+  "sqltools.results.pageSize": 50,
+  "sqltools.results.limit": 50,
+  "githubPullRequests.ignoredPullRequestBranches": [
+    "main"
+  ]
 }
